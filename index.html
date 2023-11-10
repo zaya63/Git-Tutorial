@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="shortcut icon" href="assets/images/dindin-logo-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    
+    <title>Portal DinDin | Home </title>
+</head>
+
+
+<body class="">
+   <!---Navbar-->
+    <header class="">
+          <nav class="container-fluid navbar navbar-expand-lg bg-principal ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/images/logo-header.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link text-white " aria-current="page" href="./pages/cursos.html">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./pages/blog.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white " href="./pages/contato.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="javascript:void(0)" onclick ="document.getElementById('id01').style.display='block'" style="width:auto;">login</a>
+                          <div id="id01" class="modal">
+                          <form class="modal-content animate" action="/action_page.php" method="post">
+                          <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="D:\Portal-Din-Din-Gama-Academy-main\assets\images\images.png" alt="Avatar" class="avatar">
+                          </div>
+                          <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                              
+                            <button type="submit">Login</button>
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                          </div>
+                          <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                   <a href="./pages/signup.html">
+                              <button type="button" class="cancelbtn">Signup</button>       
+                                   </a>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                          </div>
+                        </form>
+                      </div>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+</li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!---Final Navbar-->
+    <!---Inicio Banner-->
+    <section class="container col-md-12 col-lg-12 col-sm-12 col-xs-12">
+      <div class="container-fluid d-flex justify-content-center">
+          
+          <article class="container-fluid">
+              <h1 class="mt-5 text-color-secundario">Солонгос хэлний онлайн сургалт</h1>
+              <h3>Korean Online Course</h3>
+            <a href="./pages/cursos.html">
+
+              <button type="button" class="mt-5 container-fluid btn btn-outline-primary btn-secundario"> ...see more</button></a>
+
+          </article>
+
+          <section class="container-fluid d-flex align-items-center">
+              <img class="mt-5 img-fluid" src="assets/images/ilustra-banner.png" alt="">
+
+          </section>
+
+      </section>
+    </div>
+ 
+
+  <footer>
+    <div class="footer bg-principal mt-3 ">
+      <div class="container p-3 ">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center">
+            <img src="./assets/images/logo-header.png" class=" mt-3 w-75" alt="logo-footer">
+          </div>
+
+          <div class="list col-12 col-sm-12 col-md-12 col-lg-4 text-center">
+          <ul class="footerlist mt-3">
+            <li class=""><a href="./pages/cursos.html" class="link-light">Courses</a></li>
+          </ul>
+          <ul class="footerlist ">
+            <li><a href="./pages/blog.html" class="link-light">About</a></li>
+          </ul>
+          <ul class="footerlist">
+            <li><a href="./pages/contato.html" class="link-light">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
